@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recebimento de peças </title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="logo"><img src="./imagens/logo_stoque.png"></div>
+    <main>
+      <section>
+<form action="https://formsubmit.co/brendapgusmao@gmail.com" method="POST">
+  <input type="hidden" name="_cc" value="thiago.sousa@stoque.com.br,engthiagosousa@gmail.com">
+  <label>
+    <b><h2>Caro cliente,</h2></b>
+    <p></p>
+    Você recebeu uma peça do fornecedor
+    <b>Stoque Soluções Tecnológicas S/A.</b><br />
+
+    Para que o Atendimento Técnico ocorra com maior <b>brevidade</b>,
+    solicitamos que confirme o recebimento do produto respondendo os campos abaixo.
+    <p></p>
+    <b>Nome do responsável pelo recebimento:</b>
+    <p></p>
+  </label>
+
+    <input type="text" name="Nome do responsável" class="form__field" placeholder="Escreva aqui sua resposta * " required>
+    <br>
+          <div class="obg"> Este campo é obrigatório.</div>
+          <p></p><br>
+    <b>Número da nota fiscal </b>(poderá ser visualisado no canto superior direito do documento fiscal):</b><p></p>
+    <input type="text" name="Numero da nota fiscal" class="inputduvida" placeholder="Escreva aqui sua resposta * " required>
+    <button class="btnduvida" onclick="openForm()">?</button>
+          <div class="obg"> Este campo é obrigatório.</div>
+          <p></p><br>
+            <b>Nome da sua organização:</b><br>
+            <p></p>
+    <input type="text" name="Nome da organização" class="form__field" placeholder="Escreva aqui sua resposta * " required>
+    <br>
+          <div class="obg"> Este campo é obrigatório.</div>
+          <p></p><br>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display: none" />
+        <input type="hidden" name="_subject" value="Confirmação de recebimento de peças">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+    <button type="submit">Enviar</button>
+    </form>
+    <!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <img src="./imagens/danfe-nfe-exemplo.png">
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+      </section>
+    </main>
+</form>
+<footer>
+  <div class="banner"> Somos a sua parceria para novos saltos, da transformação ao resultado.
+    <a href="https://stoque.com.br/" target="_blank">
+      <button class="button2"> Acessar o site da Stoque<img src="./imagens/CTA_seta.png" class="arrow"></button>
+    </a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+

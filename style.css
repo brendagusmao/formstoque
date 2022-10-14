@@ -1,0 +1,370 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 21px;
+  color: rgb(254, 240, 240);
+  background-color: #040a02;
+  text-align: left;
+  background-image: url(./imagens/bg_web_1366x768px.png);
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transition: 2s opacity;
+  -moz-transition: 2s opacity;
+  -ms-transition: 2s opacity;
+  -o-transition: 2s opacity;
+  transition: 2s opacity;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  left: 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 0.65em;
+  text-shadow: 1px 0px 0px #061317;
+}
+
+h2 {
+  font-size: 21px;
+}
+.logo {
+  margin-top: 10px;
+  margin-left: 70px;
+  position: fixed;
+}
+.logo img {
+  width: 75%;
+}
+
+section {
+  width: 100%;
+  background-color: #061317;
+  padding: 25px;
+  border-radius: 4px;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@500;600&family=Lato:wght@400;700&display=swap");
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border: 2px solid #5c7d2c;
+  outline: 0;
+  border-radius: 8px;
+  font-size: 13px;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+}
+
+.form__field::placeholder {
+  opacity: 0.3;
+  font-size: 13px;
+  padding-left: 10px;
+  border-radius: 8px;
+}
+
+.form__field:focus {
+  /* padding-bottom: 6px; */
+  border: 2px solid #33c315;
+  /* padding-left: 10px; */
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+b {
+  color: #fff;
+}
+
+.obg {
+  font-size: 0.8em;
+  color: #5c7d2c;
+  margin: 5px;
+  float: right;
+  padding-bottom: 10px;
+}
+
+button {
+  background-color: #33c315;
+  padding: 15px;
+  outline: 0;
+  border: 0;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.agradecimento {
+  font-size: 1.2em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  font-family: "Lato", sans-serif;
+  font-size: 0.65em;
+  text-shadow: 1px 0px 0px #061317;
+}
+.banner {
+  margin-left: 50px;
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+  border-radius: 8px;
+  border: 2px solid #caff32;
+  padding: 20px;
+  font-size: 15px;
+  display: inline-block;
+  padding-left: 15px;
+}
+.button2 {
+  background-color: #caff32;
+  padding: 15px;
+  outline: 0;
+  margin-left: 1.8%;
+  position: absolute;
+  border: 0;
+  margin-top: -15px;
+  border-radius: 3px;
+}
+.arrow {
+  margin-left: 20px;
+  width: 20%;
+}
+
+.inputduvida {
+  font-family: inherit;
+  width: 93%;
+  border: 0;
+  border: 2px solid #5c7d2c;
+  outline: 0;
+  border-radius: 8px;
+  font-size: 13px;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+}
+.inputduvida::placeholder {
+  opacity: 0.3;
+  font-size: 13px;
+  padding-left: 10px;
+  border-radius: 8px;
+}
+.inputduvida:focus {
+  /* padding-bottom: 6px; */
+  border: 2px solid #33c315;
+  /* padding-left: 10px; */
+  border-radius: 8px;
+  width: 92%;
+  padding-left: 10px;
+}
+.btnduvida {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-shadow: 1px 0px 0px #061317;
+}
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: absolute;
+    top: 160px;
+    right: 305px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  .form-container {
+    max-width: 400px;
+    padding: 10px;
+    background-color: white;
+  }
+.form-popup img {
+    width: 100%;
+}
+@media screen and (max-width: 465px) {
+    body {
+      background-image: url(./imagens/bg_mobile_1440x2560px.png);
+      background-size: cover;
+      background-color: #040a02;
+    }
+    main {
+      font-size: 0.8em;
+      width: 100%;
+    }
+  
+    section {
+      margin-top: 150px;
+      margin-left: 10px;
+    }
+    .logo {
+      margin-top: 50px;
+      position: absolute;
+      margin-left: 20px;
+    }
+    .logo img {
+      width: 100%;
+    }
+    footer {
+      width: 100%;
+    }
+    .banner {
+      margin-left: 20px;
+      margin-top: 20px;
+      width: 100%;
+      text-align: justify;
+    }
+    .button2 {
+      background-color: #caff32;
+      padding: 15px;
+      outline: 0;
+      margin-left: -30%!important;
+      position: absolute;
+      border: 0;
+      margin-top: 25px!important;
+      border-radius: 3px;
+    }
+    .form-popup {
+      display: none;
+      position: absolute;
+      top: 260px;
+      right: 10px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    .form-container {
+      max-width: 400px;
+      padding: 10px;
+      background-color: white;
+    }
+  }
+  
+/* @media screen and (max-width: 420px) {
+  body {
+    background-image: url(./imagens/bg_mobile_1440x2560px.png);
+    background-size: cover;
+    background-color: #040a02;
+  }
+  main {
+    font-size: 0.8em;
+    width: 80%;
+  }
+
+  section {
+    margin-top: 150px;
+    margin-left: 10px;
+  }
+  .logo {
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 20px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  .banner {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: justify;
+  }
+  .button2 {
+    background-color: #caff32;
+    padding: 10px;
+    outline: 0;
+    margin-left: -140px;
+    position: absolute;
+    border: 0;
+    margin-top: 25px;
+    border-radius: 3px;
+  }
+} */
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url(./imagens/bg_mobile_1440x2560px.png);
+    background-size: cover;
+    background-color: #040a02;
+  }
+  main {
+    font-size: 0.8em;
+    width: 98%;
+  }
+
+  section {
+    margin-top: 150px;
+    margin-left: 10px;
+  }
+  .logo {
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 20px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  .banner {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: justify;
+  }
+  .button2 {
+    background-color: #caff32;
+    padding: 15px;
+    outline: 0;
+    margin-left: 1.8%;
+    position: absolute;
+    border: 0;
+    margin-top: -15px;
+    border-radius: 3px;
+  }
+}
+@media screen and (max-width: 770px) {
+    .button2 {
+        background-color: #caff32;
+        padding: 5px;
+        margin-left: 1.8%;
+        position: absolute;
+        border: 0;
+        font-size: 13px;
+        margin-top: -15px;
+        border-radius: 3px;
+      }
+    .button2 img {
+        width: 10%;
+    }
+    .form-popup {
+      display: none;
+      position: absolute;
+      top: 360px;
+      right: 0px!important;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+}
+@media screen and (max-width: 300px) {
+    body {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 19px;
+    }
+    section {
+        margin-left: 0px;
+    }
+    .button2 {
+        margin-left: -1.9%;
+      }
+}
