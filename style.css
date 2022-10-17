@@ -31,7 +31,7 @@ h2 {
 .logo {
   margin-top: 10px;
   margin-left: 70px;
-  position: fixed;
+  position: absolute;
 }
 .logo img {
   width: 75%;
@@ -52,7 +52,7 @@ section {
   font-family: inherit;
   width: 100%;
   border: 0;
-  border: 2px solid #5c7d2c;
+  border: 2px solid #caff32;
   outline: 0;
   border-radius: 8px;
   font-size: 13px;
@@ -62,7 +62,7 @@ section {
 }
 
 .form__field::placeholder {
-  opacity: 0.3;
+  color: #6f7c7e;
   font-size: 13px;
   padding-left: 10px;
   border-radius: 8px;
@@ -70,7 +70,7 @@ section {
 
 .form__field:focus {
   /* padding-bottom: 6px; */
-  border: 2px solid #33c315;
+  border: 2px solid #caff32;
   /* padding-left: 10px; */
   border-radius: 8px;
   padding-left: 10px;
@@ -82,15 +82,15 @@ b {
 
 .obg {
   font-size: 0.8em;
-  color: #5c7d2c;
+  color: #caff32;
   margin: 5px;
   float: right;
   padding-bottom: 10px;
 }
 
 button {
-  background-color: #33c315;
-  padding: 15px;
+  background-color: #caff32;
+  padding: 7px;
   outline: 0;
   border: 0;
   margin-top: 5px;
@@ -136,40 +136,42 @@ footer {
   width: 20%;
 }
 
-.inputduvida {
-  font-family: inherit;
-  width: 93%;
+menu {
+  width: 100%;
   border: 0;
-  border: 2px solid #5c7d2c;
+  border: 2px solid #caff32;
   outline: 0;
   border-radius: 8px;
+  padding: 0px;
+}
+.inputduvida {
+  font-family: inherit;
+  width: 83%;
+  border: none;
+  outline: 0;
   font-size: 13px;
   color: white;
-  padding: 7px 0;
+  padding: 2px;
+  padding-bottom: 8px;
   background: transparent;
 }
 .inputduvida::placeholder {
-  opacity: 0.3;
+  color: #6f7c7e;
   font-size: 13px;
   padding-left: 10px;
-  border-radius: 8px;
+  padding-top: 1px;
 }
 .inputduvida:focus {
   /* padding-bottom: 6px; */
-  border: 2px solid #33c315;
-  /* padding-left: 10px; */
+  padding-top: 10px;
   border-radius: 8px;
-  width: 92%;
   padding-left: 10px;
 }
+
 .btnduvida {
-  font-weight: bold;
-  font-size: 18px;
-  color: #fff;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-shadow: 1px 0px 0px #061317;
+  font-size: 13px;
+  color: black;
+  padding: 3px;
 }
 /* The popup form - hidden by default */
 .form-popup {
@@ -222,7 +224,7 @@ footer {
     }
     .button2 {
       background-color: #caff32;
-      padding: 15px;
+      padding: 13px;
       outline: 0;
       margin-left: -30%!important;
       position: absolute;
@@ -371,4 +373,30 @@ a {
     .button2 {
         margin-left: -1.9%;
       }
+}
+@media screen and (max-width: 1275px) {
+  .button2 {
+      background-color: #caff32;
+      padding: 15px;
+      margin-left: 1.1%;
+      position: absolute;
+      border: 0;
+      font-size: 13px;
+      margin-top: -15px;
+      border-radius: 3px;
+    }
+  .button2 img {
+      width: 10%;
+  }
+  .form-popup {
+    display: none;
+    position: absolute;
+    top: 360px;
+    right: 0px!important;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  .inputduvida {
+    width: 83.5%;
+  }
 }
