@@ -1,5 +1,11 @@
+/* Estilos Gerais */
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url(./NeueMontreal-Regular.otf);
+}
+
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "PP Neue Montreal", serif;
   font-size: 21px;
   color: rgb(254, 240, 240);
   background-color: #040a02;
@@ -20,9 +26,11 @@ main {
   justify-content: center;
   width: 60%;
   left: 0px;
-  font-family: "Lato", sans-serif;
+  font-family: "PP Neue Montreal", serif;
+  font-weight: 300;
   font-size: 0.65em;
   text-shadow: 1px 0px 0px #061317;
+  letter-spacing: 0.5px;
 }
 
 h2 {
@@ -110,14 +118,16 @@ footer {
   text-shadow: 1px 0px 0px #061317;
 }
 .banner {
-  margin-left: 50px;
+  color: #fff;
+  margin-left: 56px;
   margin-top: 10px;
-  width: 90%;
+  width: 100%;
   text-align: left;
   border-radius: 8px;
   border: 2px solid #caff32;
-  padding: 10px;
+  padding: 5px;
   font-size: 15px;
+  font-family: "PP Neue Montreal", serif;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -126,16 +136,21 @@ footer {
 }
 .container {
   width: 100%;
-  line-height: 35px;
+  line-height: 40px;
 }
 .button2 {
-  background-color: #caff32;
-  padding: 10px;
   outline: 0;
   float: right;
   border: 0;
   margin: 1px;
-  border-radius: 3px;
+  color: #0f2428;
+  font-size: 0.85em;
+  background: #caff32;
+  display: block;
+  padding: 15px;
+  border-radius: 5.3px;
+  font-weight: bold;
+  text-shadow: none;
 }
 .arrow {
   margin-left: 20px;
@@ -185,71 +200,71 @@ menu {
 
 /* The popup form - hidden by default */
 .form-popup {
-    display: none;
-    position: absolute;
-    top: 160px;
-    right: 305px;
-    z-index: 9;
-  }
-  .form-container {
-    max-width: 400px;
-    padding: 15px;
-    background-color: white;
-  }
+  display: none;
+  position: absolute;
+  top: 200px;
+  right: 305px;
+  z-index: 9;
+}
+.form-container {
+  max-width: 400px;
+  padding: 15px;
+  background-color: white;
+}
 .form-popup img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 a {
   text-decoration: none;
   color: black;
 }
 @media screen and (max-width: 465px) {
-    body {
-      background-image: url(./imagens/bg_mobile_1440x2560px.png);
-      background-size: cover;
-      background-color: #040a02;
-    }
-    main {
-      font-size: 0.8em;
-      width: 100%;
-    }
-  
-    section {
-      margin-top: 150px;
-      margin-left: 10px;
-    }
-    .logo {
-      margin-top: 50px;
-      position: absolute;
-      margin-left: 20px;
-    }
-    .logo img {
-      width: 100%;
-    }
-    footer {
-      width: 100%;
-    }
-    .banner {
-      margin-left: 20px;
-      margin-top: 20px;
-      width: 100%;
-      text-align: justify;
-    }
-    .form-popup {
-      display: none;
-      position: absolute;
-      top: 260px;
-      right: 10px;
-      border: 3px solid #f1f1f1;
-      z-index: 9;
-    }
-    .form-container {
-      max-width: 400px;
-      padding: 10px;
-      background-color: white;
-    }
+  body {
+    background-image: url(./imagens/bg_mobile_1440x2560px.png);
+    background-size: cover;
+    background-color: #040a02;
   }
+  main {
+    font-size: 0.8em;
+    width: 100%;
+  }
+
+  section {
+    margin-top: 150px;
+    margin-left: 10px;
+  }
+  .logo {
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 20px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  .banner {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: justify;
+  }
+  .form-popup {
+    display: none;
+    position: absolute;
+    top: 260px;
+    right: 10px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  .form-container {
+    max-width: 400px;
+    padding: 10px;
+    background-color: white;
+  }
+}
 
 /* @media screen and (max-width: 420px) {
   body {
@@ -326,38 +341,37 @@ a {
     width: 100%;
     text-align: justify;
   }
-
 }
 @media screen and (max-width: 770px) {
-    .button2 img {
-        width: 10%;
-    }
-    .form-popup {
-      display: none;
-      position: absolute;
-      top: 360px;
-      right: 0px!important;
-      border: 3px solid #f1f1f1;
-      z-index: 9;
-    }
+  .button2 img {
+    width: 10%;
+  }
+  .form-popup {
+    display: none;
+    position: absolute;
+    top: 360px;
+    right: 0px !important;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
 }
 @media screen and (max-width: 300px) {
-    body {
-        font-size: 18px;
-    }
-    h2 {
-        font-size: 19px;
-    }
-    section {
-        margin-left: 0px;
-    }
+  body {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  section {
+    margin-left: 0px;
+  }
 }
 @media screen and (max-width: 1275px) {
   .form-popup {
     display: none;
     position: absolute;
     top: 360px;
-    right: 0px!important;
+    right: 0px !important;
     border: 3px solid #f1f1f1;
     z-index: 9;
   }
