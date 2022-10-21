@@ -112,23 +112,29 @@ footer {
 .banner {
   margin-left: 50px;
   margin-top: 10px;
-  width: 100%;
+  width: 90%;
   text-align: left;
   border-radius: 8px;
   border: 2px solid #caff32;
-  padding: 20px;
+  padding: 10px;
   font-size: 15px;
-  display: inline-block;
-  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 5px;
+  height: auto;
+}
+.container {
+  width: 100%;
+  line-height: 35px;
 }
 .button2 {
   background-color: #caff32;
-  padding: 15px;
+  padding: 10px;
   outline: 0;
-  margin-left: 1.8%;
-  position: absolute;
+  float: right;
   border: 0;
-  margin-top: -15px;
+  margin: 1px;
   border-radius: 3px;
 }
 .arrow {
@@ -141,7 +147,11 @@ menu {
   border: 0;
   border: 2px solid #caff32;
   outline: 0;
+  height: 30px;
+  justify-content: space-around;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
   padding: 0px;
 }
 .inputduvida {
@@ -151,28 +161,28 @@ menu {
   outline: 0;
   font-size: 13px;
   color: white;
-  padding: 2px;
-  padding-bottom: 8px;
+  line-height: 20px;
+  padding: 5px;
   background: transparent;
 }
 .inputduvida::placeholder {
   color: #6f7c7e;
   font-size: 13px;
-  padding-left: 10px;
-  padding-top: 1px;
+  padding-left: 3px;
 }
 .inputduvida:focus {
-  /* padding-bottom: 6px; */
-  padding-top: 10px;
   border-radius: 8px;
   padding-left: 10px;
 }
 
 .btnduvida {
+  margin-top: -1px;
+  float: right;
   font-size: 13px;
   color: black;
   padding: 3px;
 }
+
 /* The popup form - hidden by default */
 .form-popup {
     display: none;
@@ -189,6 +199,10 @@ menu {
 .form-popup img {
     width: 100%;
     height: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 @media screen and (max-width: 465px) {
     body {
@@ -222,16 +236,6 @@ menu {
       width: 100%;
       text-align: justify;
     }
-    .button2 {
-      background-color: #caff32;
-      padding: 13px;
-      outline: 0;
-      margin-left: -30%!important;
-      position: absolute;
-      border: 0;
-      margin-top: 25px!important;
-      border-radius: 3px;
-    }
     .form-popup {
       display: none;
       position: absolute;
@@ -247,10 +251,6 @@ menu {
     }
   }
 
-a {
-  text-decoration: none;
-  color: black;
-}
 /* @media screen and (max-width: 420px) {
   body {
     background-image: url(./imagens/bg_mobile_1440x2560px.png);
@@ -326,28 +326,9 @@ a {
     width: 100%;
     text-align: justify;
   }
-  .button2 {
-    background-color: #caff32;
-    padding: 15px;
-    outline: 0;
-    margin-left: 1.8%;
-    position: absolute;
-    border: 0;
-    margin-top: -15px;
-    border-radius: 3px;
-  }
+
 }
 @media screen and (max-width: 770px) {
-    .button2 {
-        background-color: #caff32;
-        padding: 5px;
-        margin-left: 1.8%;
-        position: absolute;
-        border: 0;
-        font-size: 13px;
-        margin-top: -15px;
-        border-radius: 3px;
-      }
     .button2 img {
         width: 10%;
     }
@@ -370,24 +351,8 @@ a {
     section {
         margin-left: 0px;
     }
-    .button2 {
-        margin-left: -1.9%;
-      }
 }
 @media screen and (max-width: 1275px) {
-  .button2 {
-      background-color: #caff32;
-      padding: 15px;
-      margin-left: 1.1%;
-      position: absolute;
-      border: 0;
-      font-size: 13px;
-      margin-top: -15px;
-      border-radius: 3px;
-    }
-  .button2 img {
-      width: 10%;
-  }
   .form-popup {
     display: none;
     position: absolute;
